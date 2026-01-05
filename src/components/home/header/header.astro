@@ -1,0 +1,54 @@
+---
+import SocialIcons from "../../commons/socialIcons/socialIcons.jsx";
+import TypeEfect from "../header/typeEfect.jsx";
+---
+
+<header class="relative h-screen bg-dark overflow-hidden">
+  <!-- FONDO DECORATIVO -->
+  <div class="absolute inset-0 grid grid-cols-2">
+    <!-- Mancha roja -->
+    <div
+      class="animate-gradientMove h-80 bg-linear-to-br
+             from-[#DC181F] to-[#770d10]
+             opacity-30 blur-[120px]"
+    ></div>
+
+    <!-- Mancha café / roja -->
+    <div
+      class="animate-gradientMove2 h-80 bg-linear-to-br
+             from-[#8e431f] to-[#DC181F]
+             opacity-25 blur-[120px]"
+    ></div>
+  </div>
+
+  <!-- CONTENIDO -->
+  <main
+    class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4"
+  >
+    <h1 class="text-4xl md:text-7xl font-bold text-white text-shadow mt-10">
+      Hola! soy Javier
+    </h1>
+
+    <TypeEfect client:visible />
+
+    <p
+      class="text-xs md:text-xl text-gray max-w-sm md:max-w-xl font-semibold mt-3"
+    >
+      Explora mis proyectos, conoce un poco más sobre mí y, si deseas ponerte en
+      contacto, ¡estoy a solo un mensaje de distancia!
+    </p>
+
+    <SocialIcons client:visible />
+
+    <a
+      target="_blank"
+      href="https://drive.google.com/file/d/1dIUZSRRXzl_TCSAeoRfMKT_SvydItgUd/view?usp=sharing"
+      class="mt-4 px-6 py-3 bg-primary hover-bg-secondary
+             text-white font-semibold rounded-3xl transition-all duration-150
+             drop-shadow-[2px_2px_0_#770d10]
+             active:translate-y-0.5 active:drop-shadow-none"
+    >
+      Mi Curriculum
+    </a>
+  </main>
+</header>

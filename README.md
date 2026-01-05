@@ -1,5 +1,4 @@
-# 🌌 Personal Portfolio 
-
+# 🌌 Personal Portfolio - Francisco Javier Cervantes
 
 ---
 
@@ -16,8 +15,8 @@
 
 - [Astro](https://astro.build/)  
 - [TailwindCSS](https://tailwindcss.com/)  
-- [TypeScript / JavaScript]  
-- [React (en componentes selectivos)]  
+- [TypeScript / JavaScript](https://www.typescriptlang.org/)  
+- [React (en componentes selectivos)](https://es.react.dev/)  
 - [Vite](https://vitejs.dev/)  
 
 ---
@@ -28,7 +27,7 @@
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
 ```text
 /
@@ -44,7 +43,7 @@ Inside of your Astro project, you'll see the following folders and files:
 └── astro.config.mjs
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Para obtener más información sobre la estructura de carpetas de un proyecto Astro, consuta [Nuestra guía sobre la estructura del proyecto](https://docs.astro.build/en/basics/project-structure/).
 
 ## 🧞 Commands
 
@@ -60,5 +59,22 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 ---
+Deploy
+Este proyecto puede desplegarse fácilmente en:
+GitHub Pages
+Netlify
+Vercel
+Solo es necesario ejecutar:
 
+`npm run build`
 
+Y subir el contenido de la carpeta dist/.
+
+##📬 Contacto
+
+Si te interesa colaborar, contratar un proyecto o simplemente saludar:
+
+- 📧 Email: (elavat.9000@gmail.com)
+- 💼 LinkedIn: (https://www.linkedin.com/in/francisco-javier-cervantes-mendieta-327575213/)
+- 🌐 Portfolio: ()
+- ✨ Hecho con Astro, café y ganas de crecer profesionalmente.

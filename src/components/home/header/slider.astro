@@ -1,38 +1,43 @@
 ---
 const technologies = [
-  "astro",
-  "react",
-  "typeScript",
-  "tailwindcss",
-  "nodejs",
-  "HTML5",
-  "CSS3",
-  "javaScript",
-  "git",
-  "supabase",
-  "mysql",
-  "bash",
+  { name: "Astro", file: "astro.svg" },
+  { name: "Bash", file: "bash.svg" },
+  { name: "C++", file: "c++.svg" },
+  { name: "CSS3", file: "CSS3.svg" },
+  { name: "Git", file: "git.svg" },
+  { name: "HTML5", file: "HTML5.svg" },
+  { name: "Java", file: "java.svg" },
+  { name: "Node.js", file: "nodejs.svg" },
+  { name: "NumPy", file: "numpy.svg" },
+  { name: "Oracle Cloud (OCI)", file: "oracle-cloud.svg" },
+  { name: "Python", file: "python.svg" },
+  { name: "React", file: "react.svg" },
+  { name: "Tailwind CSS", file: "tailwindcss.svg" },
+  { name: "Vercel", file: "vercel.svg" },
+  { name: "Power BI", file: "powerbi.svg" },
 ];
----
 
+---
 <div class="relative overflow-x-hidden px-8 py-8">
   <div class="animate-scroll hover:animate-paused flex w-max gap-12 md:gap-20">
     {
-      technologies.concat(technologies, technologies).map((tech) => (
-        <div class="group flex items-center gap-2 transition-all duration-300">
-          <img
-            src={`/svg/${tech}.svg`}
-            alt={tech}
-            class="h-7 w-auto object-contain  transition-transform group-hover:scale-110"
-            width="30"
-            height="30"
-            loading="lazy"
-          />
-          <span class="text-lg font-medium text-white">
-            {tech.charAt(0).toUpperCase() + tech.slice(1)}
-          </span>
-        </div>
-      ))
+      technologies
+        .concat(technologies, technologies)
+        .map((tech) => (
+          <div class="group flex items-center gap-2 transition-all duration-300">
+            <img
+              src={`/svg/${tech.file}`}
+              alt={tech.name}
+              class="h-7 w-auto object-contain transition-transform group-hover:scale-110"
+              width="30"
+              height="30"
+              loading="lazy"
+            />
+            <span class="text-lg font-medium text-white">
+              {tech.name}
+            </span>
+          </div>
+        ))
     }
   </div>
 </div>

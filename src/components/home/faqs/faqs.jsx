@@ -36,23 +36,24 @@ const CategoryIcons = {
 const SkillsList = () => {
   const [openItem, setOpenItem] = useState(null);
 
-  const skills = {
-    "¿Qué tecnologías uso?": [
-      "Actualmente trabajo con tecnologías como React, Next.js, Vue.js, Astro, tailwind, Boostrap y demas librerias y frameworks para el frontend y en el backend trabajo con Node.js, Express, MongoDB, Firebase, entre otras.",
-    ],
-    "Mi Experiencia": [
-      "Tengo experiencia trabajando en startups y consultoras tecnológicas, desarrollando y maquetando sitios web a partir de diseños en Figma. Para ello, utilizo tecnologías frontend como Astro y React, junto con Tailwind CSS y otras librerías y frameworks para el estilizado y la optimización de interfaces.",
-    ],
-    "Mi formacion": [
-      "Estudié una tecnicatura en automatización de grado universitaria en el ITU, lo que me brindó las bases en programación. Posteriormente, decidí enfocarme en el desarrollo web y de software estudiando en el ITU. Ademas, realicé diversos cursos, diplomados y capacitaciones en grandes universidades Argentinas, como la UTN y el Instituto Tecnológico Universitario, tambien, complemento mi formación con el aprendizaje autodidacta, lo que me permite mantenerme actualizado con los avances tecnológicos en el desarrollo de software.",
-    ],
-    "¿Cómo trabajo en equipo?": [
-      "Tengo experiencia trabajando en equipos multidisciplinarios, donde me he encargado del desarrollo frontend de aplicaciones web. Para ello, utilizo metodologías ágiles como Scrum y Kanban, además de herramientas de control de versiones como Git y GitHub para gestionar el flujo de trabajo. También cuento con experiencia en el uso de herramientas de gestión de proyectos como Trello y Jira, facilitando la organización y colaboración dentro del equipo.",
-    ],
-    "Metodolgias Agiles": [
-      "He trabajado con metodologías ágiles como Scrum y Kanban. En Scrum, participé en sprints de dos semanas, donde al finalizar cada sprint realizaba un pull request (PR) con mi trabajo, el cual pasaba por una fase de revisión y corrección antes de ser fusionado y enviado a producción. También he trabajado con Kanban, utilizando tableros para gestionar tareas y moverlas según su estado de progreso. Además, participé en reuniones diarias (dailies) para planificar y reportar avances del proyecto, asegurando una comunicación eficiente dentro del equipo.",
-    ],
-  };
+const skills = {
+  "¿Qué tecnologías uso?": [
+    "Trabajo principalmente con JavaScript y Python. En frontend uso React, Astro, Tailwind CSS y Bootstrap para crear interfaces claras y funcionales. En backend he trabajado con Node.js, Express, MongoDB y Firebase. También tengo experiencia usando Git y GitHub para control de versiones y trabajo colaborativo.",
+  ],
+  "Mi experiencia": [
+    "He trabajado en soporte técnico, atención al cliente y áreas de IT, lo que me dio una base sólida para resolver problemas reales. Actualmente desarrollo proyectos web y de software, tanto personales como académicos, enfocándome en crear soluciones prácticas, bien estructuradas y fáciles de mantener.",
+  ],
+  "Mi formación": [
+    "Tengo formación técnica en automatización a nivel universitario, donde adquirí bases sólidas en lógica y programación. Más adelante decidí enfocarme en el desarrollo de software y análisis de datos. He complementado mis estudios con cursos, proyectos prácticos y aprendizaje autodidacta, lo que me ha permitido seguir creciendo y mantenerme actualizado.",
+  ],
+  "¿Cómo trabajo en equipo?": [
+    "Me adapto bien al trabajo en equipo y a distintos roles. Vengo de entornos donde la comunicación clara y la responsabilidad eran clave. Utilizo Git y GitHub para colaborar, documentar cambios y mantener un flujo de trabajo ordenado. Siempre busco aportar soluciones y aprender de los demás.",
+  ],
+  "Forma de trabajo": [
+  "Trabajo de manera práctica y ordenada. Me enfoco en entender el problema, proponer una solución y llevarla a cabo paso a paso. Priorizo que el proyecto funcione bien y sea fácil de mantener, antes que seguir procesos complejos.",
+  ],
+};
+
 
   const toggleItem = (item) => {
     setOpenItem(openItem === item ? null : item);

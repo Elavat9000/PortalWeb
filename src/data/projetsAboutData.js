@@ -25,6 +25,7 @@ export const proyectos = [
     imagen: imgRemolquesAlt.src,
     tecnologias: ["HTML", "CSS", "JavaScript"],
     codigo: "https://github.com/Elavat9000/remolquesC",
+    demo: "https://remolques-c.vercel.app/",
   },
   {
     titulo: "Analisis de Datos",

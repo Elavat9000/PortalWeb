@@ -11,7 +11,7 @@ export const proyectos = [
     imagen: imgNote.src,
     tecnologias: ["tkinter","threading","Selenium", "sys", "Python"],
     codigo: "https://github.com/Elavat9000/Campanas_Selenium/tree/main",
-    demo: "https://youtu.be/1K3Yk8L6v8M",
+    demo: "https://youtu.be/ybT9QY36-uE",
   },
   {
     titulo: "Página de Remolques",

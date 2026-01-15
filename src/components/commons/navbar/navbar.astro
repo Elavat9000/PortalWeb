@@ -5,7 +5,6 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa6";
 
 const links = [
   { name: "Inicio", href: "/" },
-  { name: "Proyectos", href: "/proyectos" },
   { name: "Sobre Mi", href: "/about" },
   { name: "Contacto", href: "/contact" },
 ];
@@ -36,7 +35,7 @@ const links = [
             <li>
               <a
                 href={link.href}
-                class="nav-link font-bold transition-colors duration-300 text-white hover:text-[#7d2dac]"
+                class="nav-link font-bold transition-colors duration-300 text-white hover:text-[#F0D107]"
               >
                 {link.name}
               </a>
@@ -45,7 +44,7 @@ const links = [
         }
 
         <li class="flex items-center gap-3">
-          <NotificationBell client:visible />
+          
 
           <a
             href="https://www.linkedin.com/in/francisco-javier-cervantes-mendieta-327575213/"
@@ -54,7 +53,7 @@ const links = [
             aria-label="LinkedIn"
           >
             <FaLinkedinIn
-              className="h-7 w-7 cursor-pointer hover:text-[#7836cf]"
+              className="h-7 w-7 cursor-pointer hover:text-[#f0d107]"
             />
           </a>
 
@@ -64,7 +63,7 @@ const links = [
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <FaGithub className="h-7 w-7 cursor-pointer hover:text-[#7836cf]" />
+            <FaGithub className="h-7 w-7 cursor-pointer hover:text-[#f0d107]" />
           </a>
         </li>
       </ul>
@@ -131,11 +130,11 @@ const links = [
         const href = hrefAttr?.replace(/\/$/, "") || "" || "/";
 
         if (href === currentPath) {
-          link.classList.add("text-[#7d2dac]", "font-extrabold");
+          link.classList.add("text-[#F0D107]", "font-extrabold");
           link.classList.remove("text-white");
         } else {
-          link.classList.remove("text-[#7d2dac]", "font-extrabold");
-          if (!link.classList.contains("hover:text-[#7d2dac]")) {
+          link.classList.remove("text-[#F0D107]", "font-extrabold");
+          if (!link.classList.contains("hover:text-[#F0D107]")) {
             link.classList.add("text-white");
           }
         }

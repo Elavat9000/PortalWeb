@@ -38,19 +38,27 @@ const SkillsList = () => {
 
   const skills = {
     "¿Qué tecnologías uso?": [
-      "Actualmente trabajo con tecnologías como React, Next.js, Vue.js, Astro, tailwind, Boostrap y demas librerias y frameworks para el frontend y en el backend trabajo con Node.js, Express, MongoDB, Firebase, entre otras.",
+      "Trabajo con Python como lenguaje principal para análisis de datos y automatización, utilizando librerías como Pandas, NumPy y Matplotlib. En desarrollo web uso HTML, CSS, JavaScript, React y Astro, apoyándome en Tailwind CSS para el diseño. También utilizo Git y GitHub para el control de versiones y la gestión de proyectos.",
     ],
-    "Mi Experiencia": [
-      "Tengo experiencia trabajando en startups y consultoras tecnológicas, desarrollando y maquetando sitios web a partir de diseños en Figma. Para ello, utilizo tecnologías frontend como Astro y React, junto con Tailwind CSS y otras librerías y frameworks para el estilizado y la optimización de interfaces.",
+
+    "Mi perfil profesional": [
+      "Me desempeño como analista de datos en formación, automatizador y desarrollador web. Me gusta crear soluciones que optimicen procesos, analizar información para obtener insights útiles y construir aplicaciones web funcionales que faciliten el trabajo y la toma de decisiones.",
     ],
-    "Mi formacion": [
-      "Estudié una tecnicatura en automatización de grado universitaria en el ITU, lo que me brindó las bases en programación. Posteriormente, decidí enfocarme en el desarrollo web y de software estudiando en el ITU. Ademas, realicé diversos cursos, diplomados y capacitaciones en grandes universidades Argentinas, como la UTN y el Instituto Tecnológico Universitario, tambien, complemento mi formación con el aprendizaje autodidacta, lo que me permite mantenerme actualizado con los avances tecnológicos en el desarrollo de software.",
+
+    "Mi experiencia práctica": [
+      "He trabajado en proyectos donde realizo limpieza, transformación y análisis de datos a partir de archivos CSV, aplicando técnicas básicas de ETL. Además, he desarrollado scripts en Python para automatizar tareas repetitivas y proyectos web donde integro lógica, diseño y datos para resolver necesidades reales.",
     ],
-    "¿Cómo trabajo en equipo?": [
-      "Tengo experiencia trabajando en equipos multidisciplinarios, donde me he encargado del desarrollo frontend de aplicaciones web. Para ello, utilizo metodologías ágiles como Scrum y Kanban, además de herramientas de control de versiones como Git y GitHub para gestionar el flujo de trabajo. También cuento con experiencia en el uso de herramientas de gestión de proyectos como Trello y Jira, facilitando la organización y colaboración dentro del equipo.",
+
+    "Mi formación": [
+      "Cuento con formación técnica en automatización, lo que me dio bases sólidas en programación y lógica. He complementado mi aprendizaje con cursos, diplomados y estudio autodidacta enfocados en análisis de datos, desarrollo web y automatización, manteniéndome en constante aprendizaje y práctica.",
     ],
-    "Metodolgias Agiles": [
-      "He trabajado con metodologías ágiles como Scrum y Kanban. En Scrum, participé en sprints de dos semanas, donde al finalizar cada sprint realizaba un pull request (PR) con mi trabajo, el cual pasaba por una fase de revisión y corrección antes de ser fusionado y enviado a producción. También he trabajado con Kanban, utilizando tableros para gestionar tareas y moverlas según su estado de progreso. Además, participé en reuniones diarias (dailies) para planificar y reportar avances del proyecto, asegurando una comunicación eficiente dentro del equipo.",
+
+    "¿Cómo trabajo?": [
+      "Trabajo de manera organizada y práctica, enfocándome en entender el problema antes de proponer una solución. Me adapto fácilmente al trabajo individual o colaborativo, documentando procesos, utilizando Git para el control de cambios y priorizando soluciones claras, funcionales y mantenibles.",
+    ],
+
+    "Automatización y datos": [
+      "Disfruto automatizar procesos mediante scripts en Python para reducir errores y ahorrar tiempo. En análisis de datos, me enfoco en explorar, limpiar y visualizar la información para apoyar la toma de decisiones, siempre buscando que los resultados sean claros y comprensibles.",
     ],
   };
 
@@ -62,21 +70,21 @@ const SkillsList = () => {
     <div className="flex flex-col items-center text-left mx-auto max-w-6xl px-4">
       <div className="site-container mt-10">
         <h2 class="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-end">
-          <span class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"></span>
-          <span class="drop-shadow-[2px_2px_0_#7836cf]">Mas Sobre Mi</span>
+          <span class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#737670] md:block"></span>
+          <span class="drop-shadow-[2px_2px_0_#737670]">Mas Sobre Mi</span>
         </h2>
         <ul className="mt-4 space-y-4 text-lg">
           {Object.entries(skills).map(([category, items]) => (
             <li key={category} className="w-full">
               <div
                 onClick={() => toggleItem(category)}
-                className="bg-gray-900 hover:bg-opacity-80 w-full cursor-pointer overflow-hidden rounded-2xl text-left transition-all drop-shadow-[2px_2px_0_#7836cf]"
+                className="bg-red-900 hover:bg-opacity-80 w-full cursor-pointer overflow-hidden rounded-2xl text-left transition-all drop-shadow-[2px_2px_0_#737670]"
               >
                 <div className="flex items-center gap-3 p-4">
                   {CategoryIcons[category]}
                   <div className="flex grow items-center justify-between gap-2">
                     <div className="max-w-[200px] min-w-0 overflow-hidden md:max-w-none">
-                      <span className="block truncate text-lg text-white drop-shadow-[1px_1px_0_#7836cf] font-bold">
+                      <span className="block truncate text-lg text-white drop-shadow-[1px_1px_0_#737670] font-bold">
                         {category}
                       </span>
                     </div>
@@ -84,7 +92,7 @@ const SkillsList = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className={`h-6 w-6 shrink-0 transform text-[#6a2cbb] transition-transform ${
+                      className={`h-6 w-6 shrink-0 transform text-[#737670] transition-transform ${
                         openItem === category ? "rotate-180" : ""
                       }`}
                     >

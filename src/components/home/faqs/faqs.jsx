@@ -70,7 +70,7 @@ const skills = {
             <li key={category} className="w-full">
               <div
                 onClick={() => toggleItem(category)}
-                className="bg-red-900 hover:bg-opacity-80 w-full cursor-pointer overflow-hidden rounded-2xl text-left transition-all"
+                className="bg-red-950 hover:bg-opacity-80 w-full cursor-pointer overflow-hidden rounded-2xl text-left transition-all"
               >
                 <div className="flex items-center gap-3 p-4">
                   {CategoryIcons[category]}
